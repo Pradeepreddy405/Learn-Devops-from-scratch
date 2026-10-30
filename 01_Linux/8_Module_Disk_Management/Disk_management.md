@@ -2,7 +2,6 @@
 
 A practical, hands-on guide to Linux disk management, storage administration, monitoring, troubleshooting, and advanced storage engineering.
 
-## 📌 Project Overview
 
 Linux Disk Management is an essential skill for Linux System Administrators, Cloud Engineers, DevOps Engineers, and Site Reliability Engineers (SREs).
 
@@ -29,7 +28,7 @@ By completing this repository, you will learn how to:
 - Extend AWS EBS volumes and grow Linux filesystems.
 - Understand LVM, capacity planning, and storage observability.
 
-## 🗺️ Learning Roadmap
+##  Learning Roadmap
 
 | Level | Topic | Outcome |
 |---|---|---|
