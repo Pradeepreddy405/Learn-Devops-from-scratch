@@ -1189,17 +1189,3 @@ However, as our infrastructure grows from two EC2 instances to dozens or hundred
 It is one of the foundational concepts for managing Ansible in real-world Cloud and DevOps environments.
 
 ---
-
-**Practical verification checklist**
-
-- [ ] Successfully connected to both managed nodes using SSH.
-- [ ] Successfully executed Ansible ping without `ansible.cfg`.
-- [ ] Created `ansible.cfg`.
-- [ ] Verified automatic configuration discovery.
-- [ ] Successfully executed `ansible all -m ping` using configuration defaults.
-- [ ] Tested temporary `ANSIBLE_CONFIG`.
-- [ ] Tested persistent `ANSIBLE_CONFIG` through `.bashrc`.
-- [ ] Understood `source` and `unset`.
-- [ ] Understood configuration discovery and precedence.
-
-**Git
