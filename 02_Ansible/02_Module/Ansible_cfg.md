@@ -105,8 +105,13 @@ Outbound:
 Inbound:
 - SSH TCP 22.
 - Source: Control Node Security Group.
+- Avoid opening SSH to the entire internet.
 
-Avoid opening SSH to the entire internet.
+**Important :**
+- Security Groups are stateful. Response traffic is automatically allowed when a connection is permitted.
+- Network ACLs (NACLs) are stateless and require separate inbound and outbound rules.
+- If outbound traffic is restricted on the Control Node, explicitly allow TCP 22 to the Managed Nodes' Security Group.
+- Avoid opening SSH to the entire internet (0.0.0.0/0).
 
 ### 3.2 Verify SSH connectivity
 
