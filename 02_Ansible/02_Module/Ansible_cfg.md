@@ -97,7 +97,8 @@ Configure the security groups:
 **Control Node Security Group**
 
 Outbound:
-- TCP 22 to Managed Node Security Group.
+- By default, AWS Security Groups allow all outbound traffic.
+- Therefore, no additional outbound SSH rule is required for this lab.
 
 **Managed Nodes Security Group**
 
