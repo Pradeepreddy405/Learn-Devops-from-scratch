@@ -1,4 +1,7 @@
 
+### Caution : Because i have already configured passwordless SSH authentication, you can eventually move the SSH username and private key into your inventory or ansible.cfg. For now, explicitly specifying them in every command is excellent practice for understanding how Ansible connects to managed nodes.
+
+
 # 1. Connectivity & basic information
 
 
