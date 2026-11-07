@@ -40,7 +40,7 @@ Benefits:
 - Instead of entering your GitHub password every time, you authenticate with SSH keys.
 
 
-GitHub workflow:
+### GitHub workflow:
 Step 1 :You generate SSH keys on your computer
     - cmd:ssh-keygen -t ed25519 -C "your_email@example.com"
     - Private key → ~/.ssh/id_ed25519
