@@ -42,12 +42,12 @@ Benefits:
 
 GitHub workflow:
 Step 1 :You generate SSH keys on your computer
-        cmd:ssh-keygen -t ed25519 -C "your_email@example.com"
-            Private key → ~/.ssh/id_ed25519
-            Public key → ~/.ssh/id_ed25519.pub
+        - cmd:ssh-keygen -t ed25519 -C "your_email@example.com"
+        - Private key → ~/.ssh/id_ed25519
+        - Public key → ~/.ssh/id_ed25519.pub
 
 Step 2 :You upload public key → GitHub
-            Github login -> Settings ->SSH and GPG Keys ->New SSH Key -> add Public key
+        - Github login -> Settings ->SSH and GPG Keys ->New SSH Key -> add Public key
 Step 3 :Your private key stays with you
 Step 4 :Test the SSH connection
         cmd   :ssh -T git@github.com
