@@ -1,0 +1,64 @@
+
+# ==========================================
+# TERRAFORM
+# ==========================================
+
+# Terraform working directories (any level)
+**/.terraform/*
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Terraform crash logs
+crash.log
+crash.*.log
+
+# Terraform variable files (may contain secrets)
+*.tfvars
+*.tfvars.json
+
+# Allow example variable files
+!*.tfvars.example
+
+# Terraform override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform CLI configuration
+.terraformrc
+terraform.rc
+
+# KEEP .terraform.lock.hcl
+# Do not ignore provider lock files
+
+
+# ==========================================
+# SECRETS AND CREDENTIALS
+# ==========================================
+
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# ==========================================
+# EDITOR AND IDE FILES
+# ==========================================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==========================================
+# OPERATING SYSTEM FILES
+# ==========================================
+
+.DS_Store
+Thumbs.db
+desktop.ini
