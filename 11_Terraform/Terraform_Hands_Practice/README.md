@@ -194,4 +194,123 @@ Status: ⬜ Not Started
 | 62 | Create Reusable EC2 Module | EC2 Module | ⬜ |
 | 63 | Create Reusable Security Group Module | Security Group Module | ⬜ |
 | 64 | Create Reusable VPC Module | VPC Module | ⬜ |
-| 65 | Create Multiple EC2 Instances Using Modules
+| 65 | Create Multiple EC2 Instances Using Modules | Module Reusability | ⬜ |
+| 66 | Connect Multiple Modules | Module Dependencies | ⬜ |
+| 67 | Use Public Terraform Registry Modules | Registry Modules | ⬜ |
+| 68 | Build Multi-Environment Modules | Dev / QA / Production | ⬜ |
+| 69 | Build Production-Ready Module Structure | Best Practices | ⬜ |
+
+# Phase 8: Terraform with DevOps and CI/CD
+
+**Goal:** Understand how Terraform is integrated into real-world DevOps workflows.
+
+| No. | Task | Concepts | Status |
+|---|---|---|---|
+| 70 | Git and GitHub Integration | Version Control | ⬜ |
+| 71 | Create Terraform CI/CD Pipeline | CI/CD | ⬜ |
+| 72 | Terraform with Jenkins | Jenkins Pipeline | ⬜ |
+| 73 | Terraform with GitHub Actions | GitHub Workflows | ⬜ |
+| 74 | Automate Terraform Formatting and Validation | `fmt`, `validate` | ⬜ |
+| 75 | Automate Terraform Plan | Plan Automation | ⬜ |
+| 76 | Implement Approval Before Apply | Deployment Approval | ⬜ |
+| 77 | Manage AWS Credentials Securely | IAM / Environment Variables | ⬜ |
+| 78 | Implement Multi-Environment Deployment | Environment Management | ⬜ |
+| 79 | Terraform Code Quality and Security Scanning | Static Analysis | ⬜ |
+
+---
+
+# Standard Execution Workflow
+
+For every practical exercise, follow this execution sequence:
+
+```bash
+# 1. Initialize Terraform
+terraform init
+
+# 2. Format Terraform files
+terraform fmt
+
+# 3. Validate configuration
+terraform validate
+
+# 4. Review execution plan
+terraform plan
+
+# 5. Apply infrastructure
+terraform apply
+
+# 6. Verify Terraform state
+terraform state list
+
+# 7. Inspect resource details
+terraform state show RESOURCE_ADDRESS
+
+# 8. Destroy infrastructure when appropriate
+terraform destroy
+```
+
+# Recommended GitHub Folder Structure
+
+```text
+Terraform_Hands_On/
+│
+├── 01_Terraform_Basics/
+├── 02_EC2_Instance/
+├── 03_Security_Group/
+├── 04_EC2_With_Security_Group/
+├── 05_Key_Pair/
+├── 06_EC2_User_Data/
+├── 07_EBS_Volume/
+│
+├── 08_AWS_Networking/
+│
+├── 09_Terraform_Variables/
+│
+├── 10_AWS_Services/
+│
+├── 11_Advanced_Terraform/
+│
+├── 12_Real_World_Projects/
+│
+├── 13_Terraform_Modules/
+│
+├── 14_Terraform_CICD/
+│
+├── .gitignore
+│
+└── README.md
+```
+
+**Important GitHub practice:**
+
+Do not commit:
+- `.terraform/`
+- `terraform.tfstate`
+- `terraform.tfstate.backup`
+- Sensitive `.tfvars` files
+- AWS access keys or secret keys
+
+Commit:
+- `.tf` files
+- `.terraform.lock.hcl`
+- README documentation
+- Example non-sensitive variable files
+
+---
+
+# Final Learning Objective
+
+By completing this roadmap, the objective is to gain practical knowledge of:
+
+1. Terraform fundamentals and AWS provisioning.
+2. Infrastructure as Code implementation.
+3. AWS networking and infrastructure architecture.
+4. Terraform variables, outputs, functions, and expressions.
+5. Terraform state management and remote backends.
+6. Reusable Terraform modules.
+7. Production infrastructure design.
+8. Terraform CI/CD automation.
+
+**Learning strategy:** Complete Phase 1 through Phase 6 first using raw Terraform scripts. Then proceed to Phase 7 and convert those scripts into reusable modules. Finally, integrate Terraform with DevOps CI/CD workflows.
+
+**One exercise at a time. Understand → Execute → Verify → Troubleshoot → Document.**
