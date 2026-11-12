@@ -52,3 +52,13 @@ output "Availability_zone" {
   description = "Availability Zone"
   value       = aws_instance.nginx_web_server.availability_zone
 }
+
+output "ec2_public_dns" {
+  description = "Public DNS name of the EC2 instance"
+  value       = aws_instance.nginx_web_server.public_dns
+}
+
+output "machine_hostname" {
+  description = "OS-level machine hostname"
+  value       = split(".", aws_instance.nginx_web_server.private_dns)[0]
+}
