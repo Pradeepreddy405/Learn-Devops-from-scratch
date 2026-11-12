@@ -57,9 +57,7 @@ resource "aws_instance" "my_ec2" {
   instance_type = var.instance_type
 
   # Resource Reference
-  vpc_security_group_ids = [
-    aws_security_group.web_sg.id
-  ]
+  vpc_security_group_ids = [aws_security_group.web_sg.id]
 
   tags = {
     Name = "Terraform-EC2"
