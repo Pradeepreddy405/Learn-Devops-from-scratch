@@ -1,0 +1,14 @@
+[Unit]
+Description=Python Hello World Application
+After=network.target
+
+[Service]
+Type=simple
+User=ec2-user
+WorkingDirectory=/home/ec2-user/python-app
+ExecStart=/usr/bin/python3 /home/ec2-user/python-app/systemd_app.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
