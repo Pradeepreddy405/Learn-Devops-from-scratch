@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CloudDeck | Cloud & DevOps Control Center</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <a class="brand" href="/"><span class="brand-mark">C</span><span>clouddeck<small>OPS CONTROL CENTER</small></span></a>
+    <div class="side-label">WORKSPACE</div>
+    <a class="nav active" href="/">▦ <span>Overview</span></a>
+    <a class="nav" href="#deployments">⇧ <span>Deployments</span></a>
+    <a class="nav" href="#services">◉ <span>Services</span></a>
+    <a class="nav" href="/architecture">⌘ <span>Architecture</span></a>
+    <div class="side-bottom"><div class="avatar">PR</div><div><b>DevOps Engineer</b><small>Single-tier environment</small></div></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><div><span class="eyebrow">YOUR INFRASTRUCTURE AT A GLANCE</span><h1>Good evening, Engineer <span>✦</span></h1><p class="muted">A small command center for your cloud playground.</p></div>
+      <div class="top-actions"><span class="live"><i></i> DEMO ENVIRONMENT</span><span class="date">{{ now }}</span></div>
+    </header>
+    {% with messages = get_flashed_messages(with_categories=true) %}{% if messages %}{% for category, message in messages %}<div class="flash {{ category }}">{{ message }}</div>{% endfor %}{% endif %}{% endwith %}
+    <section class="hero">
+      <div><span class="hero-tag">✦ YOUR CLOUD, ONE PLACE</span><h2>Ship confidently.<br><em>Operate clearly.</em></h2><p>Track demo releases, inspect service status, and understand how a single-tier application fits together.</p><a class="hero-link" href="#deployments">Explore deployments <b>↗</b></a></div>
+      <div class="hero-art"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="cloud">☁</div><div class="node node-a">EC2</div><div class="node node-b">PY</div><div class="node node-c">DB</div><div class="spark">✦</div></div>
+    </section>
+    <section class="stats">
+      <article class="stat-card"><div class="stat-top"><span>Total deployments</span><span class="stat-icon purple">⇧</span></div><strong>{{ total }}</strong><small>All recorded releases</small></article>
+      <article class="stat-card"><div class="stat-top"><span>Successful releases</span><span class="stat-icon green">✓</span></div><strong>{{ successful }}</strong><small>Recorded as successful</small></article>
+      <article class="stat-card"><div class="stat-top"><span>Failed releases</span><span class="stat-icon red">!</span></div><strong>{{ failed }}</strong><small>Recorded as failed</small></article>
+      <article class="stat-card"><div class="stat-top"><span>Service health</span><span class="stat-icon blue">◉</span></div><strong>100<small class="percent">%</small></strong><small>Demo checks are operational</small></article>
+    </section>
+    <section class="content-grid">
+      <article class="panel deploy-panel" id="deployments">
+        <div class="panel-head"><div><span class="eyebrow">RELEASE PIPELINE</span><h3>Recent deployments</h3></div><span class="pill">Latest activity</span></div>
+        <div class="table-wrap"><table><thead><tr><th>APPLICATION</th><th>ENVIRONMENT</th><th>VERSION</th><th>STATUS</th><th>TIME</th></tr></thead><tbody>
+        {% for d in deployments %}<tr><td><b>{{ d.app_name }}</b></td><td>{{ d.environment }}</td><td><code>{{ d.version }}</code></td><td><span class="status {{ d.status|lower|replace(' ', '-') }}">{{ d.status }}</span></td><td class="time">{{ d.created_at }}</td></tr>{% endfor %}
+        </tbody></table></div>
+      </article>
+      <article class="panel form-panel">
+        <div class="panel-head"><div><span class="eyebrow">RELEASE SIMULATOR</span><h3>Record a deployment</h3></div><span class="rocket">🚀</span></div>
+        <form action="/deploy" method="post">
+          <label>Application name<input name="app_name" maxlength="60" placeholder="e.g. orders-api" required></label>
+          <div class="form-row"><label>Version<input name="version" maxlength="30" placeholder="v1.0.0" required></label><label>Environment<select name="environment"><option>Development</option><option>Staging</option><option>Production</option></select></label></div>
+          <button type="submit">＋ Record deployment</button>
+          <p class="hint">This records a demo release in the local SQLite database. It does not deploy to AWS.</p>
+        </form>
+      </article>
+    </section>
+    <section class="panel services-panel" id="services">
+      <div class="panel-head"><div><span class="eyebrow">RUNTIME COMPONENTS</span><h3>Service health</h3></div><a class="subtle-link" href="/health" target="_blank">View health endpoint ↗</a></div>
+      <div class="service-grid">{% for s in services %}<div class="service"><div class="service-icon">{{ s.icon }}</div><div class="service-info"><b>{{ s.name }}</b><small>{{ s.kind }} · {{ s.detail }}</small></div><span class="service-status"><i></i>{{ s.status }}</span></div>{% endfor %}</div>
+    </section>
+    <footer>CloudDeck <span>•</span> Built for learning Cloud & DevOps <span>•</span> Single-tier demo</footer>
+  </main>
+</div>
+</body></html>
