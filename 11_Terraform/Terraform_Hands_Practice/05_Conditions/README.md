@@ -198,12 +198,3 @@ terraform destroy
 - Nested conditions support multiple environment configurations.
 - Maps and `lookup()` are useful alternatives for complex conditional logic.
 
-## 11. Next Topics
-
-1. Conditional Expressions
-2. Logical Operators
-3. Nested Conditional Expressions
-4. count with Conditions
-5. for_each with Conditions
-6. lookup() Function
-7. Dynamic Infrastructure Configuration
