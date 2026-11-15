@@ -1,0 +1,20 @@
+[Unit]
+Description=DotNet Task 5 Application
+After=network.target
+
+[Service]
+Type=simple
+
+User=ec2-user
+WorkingDirectory=/home/ec2-user/dotnet-publish/Task5Systemd
+
+ExecStart=/usr/bin/dotnet /home/ec2-user/dotnet-publish/Task5Systemd/Task5Systemd.dll
+
+Restart=on-failure
+RestartSec=5
+
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
