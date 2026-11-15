@@ -1,4 +1,4 @@
-# CloudDeck — Cloud & DevOps Control Center
+# Cloud Deck — Cloud & DevOps Control Center
 
 A small, polished Python + Flask application designed for learning **single-tier deployment** on one cloud VM (for example, one AWS EC2 instance).
 
