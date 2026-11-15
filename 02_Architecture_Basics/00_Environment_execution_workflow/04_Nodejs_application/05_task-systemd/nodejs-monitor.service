@@ -1,0 +1,14 @@
+[Unit]
+Description=Node.js Monitoring Application
+After=network.target
+
+[Service]
+Type=simple
+User=ec2-user
+WorkingDirectory=/home/ec2-user/nodejs-practice
+ExecStart=/usr/bin/node /home/ec2-user/nodejs-practice/taks_05.js
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
