@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${pageTitle}">EC2 System Monitoring</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<header class="topbar">
+    <div>
+        <p class="eyebrow">JAVA • SPRING BOOT • EC2</p>
+        <h1>System Monitoring Dashboard</h1>
+        <p class="subtitle">Live overview of your Linux server</p>
+    </div>
+    <div class="server-status">
+        <span class="status-dot"></span>
+        <span>Application online</span>
+    </div>
+</header>
+
+<main class="container">
+    <section class="server-panel">
+        <div>
+            <span class="muted-label">HOSTNAME</span>
+            <strong id="hostname">Loading...</strong>
+        </div>
+        <div>
+            <span class="muted-label">UPTIME</span>
+            <strong id="uptime">Loading...</strong>
+        </div>
+        <div>
+            <span class="muted-label">SYSTEM LOAD (1 MIN)</span>
+            <strong id="loadAverage">Loading...</strong>
+        </div>
+    </section>
+
+    <section class="metrics-grid">
+        <article class="metric-card">
+            <div class="metric-heading"><h2>CPU Usage</h2><span class="metric-icon">CPU</span></div>
+            <div class="metric-value"><span id="cpuValue">--</span><small>%</small></div>
+            <div class="progress-track"><div id="cpuBar" class="progress-fill"></div></div>
+            <p class="metric-description">Current total processor utilization</p>
+        </article>
+
+        <article class="metric-card">
+            <div class="metric-heading"><h2>Memory Usage</h2><span class="metric-icon">RAM</span></div>
+            <div class="metric-value"><span id="memoryValue">--</span><small>%</small></div>
+            <div class="progress-track"><div id="memoryBar" class="progress-fill"></div></div>
+            <p class="metric-description" id="memoryDetails">Used / total memory</p>
+        </article>
+
+        <article class="metric-card">
+            <div class="metric-heading"><h2>Disk Usage</h2><span class="metric-icon">DISK</span></div>
+            <div class="metric-value"><span id="diskValue">--</span><small>%</small></div>
+            <div class="progress-track"><div id="diskBar" class="progress-fill"></div></div>
+            <p class="metric-description" id="diskDetails">Root filesystem used / total</p>
+        </article>
+    </section>
+
+    <section class="footer-panel">
+        <div>
+            <h2>Monitoring status</h2>
+            <p id="lastUpdated">Waiting for first metrics response...</p>
+        </div>
+        <span class="refresh-label">Auto refresh: 60 seconds</span>
+    </section>
+    <p id="errorMessage" class="error-message" role="alert"></p>
+</main>
+
+<script th:src="@{/js/dashboard.js}"></script>
+</body>
+</html>

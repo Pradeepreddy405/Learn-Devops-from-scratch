@@ -1,0 +1,88 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.6)
+
+2026-11-16T10:03:53.069Z  INFO 3006 --- [ec2-monitoring-dashboard] [           main] c.d.monitoring.MonitoringApplication     : Starting MonitoringApplication v1.0.0 using Java 21.0.13.0.3 with PID 3006 (/home/ubuntu/Java_Monitoring_Application/03_Java_ec2_monitoring/target/ec2-monitoring-dashboard.jar started by ubuntu in /home/ubuntu/Java_Monitoring_Application/03_Java_ec2_monitoring)
+2026-11-16T10:03:53.075Z  INFO 3006 --- [ec2-monitoring-dashboard] [           main] c.d.monitoring.MonitoringApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-11-16T10:03:54.672Z  INFO 3006 --- [ec2-monitoring-dashboard] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-11-16T10:03:54.698Z  INFO 3006 --- [ec2-monitoring-dashboard] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-16T10:03:54.699Z  INFO 3006 --- [ec2-monitoring-dashboard] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2026-11-16T10:03:54.744Z  INFO 3006 --- [ec2-monitoring-dashboard] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-11-16T10:03:54.744Z  INFO 3006 --- [ec2-monitoring-dashboard] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1534 ms
+2026-11-16T10:03:55.519Z  INFO 3006 --- [ec2-monitoring-dashboard] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-11-16T10:03:55.544Z  INFO 3006 --- [ec2-monitoring-dashboard] [           main] c.d.monitoring.MonitoringApplication     : Started MonitoringApplication in 3.489 seconds (process running for 4.263)
+2026-11-16T10:04:02.823Z  INFO 3006 --- [ec2-monitoring-dashboard] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-16T10:04:02.823Z  INFO 3006 --- [ec2-monitoring-dashboard] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-16T10:04:02.827Z  INFO 3006 --- [ec2-monitoring-dashboard] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+6 --- [ec2-monitoring-dashboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-16T10:04:02.827Z  INFO 3006 --- [ec2-monitoring-dashboard] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.6)
+
+2026-11-16T10:09:19.090Z  INFO 3221 --- [ec2-monitoring-dashboard] [           main] c.d.monitoring.MonitoringApplication     : Starting MonitoringApplication v1.0.0 using Java 21.0.13.0.3 with PID 3221 (/home/ubuntu/Java_Monitoring_Application/03_Java_ec2_monitoring/target/ec2-monitoring-dashboard.jar started by ubuntu in /home/ubuntu/Java_Monitoring_Application/03_Java_ec2_monitoring)
+2026-11-16T10:09:19.090Z  INFO 3221 --- [ec2-monitoring-dashboard] [main] c.d.monitoring.MonitoringApplication     : Starting MonitoringApplication v1.0.0 using Java 21.0.13.0.3 with PID 3221 (/home/ubuntu/Java_Monitoring_Application/03_Java_ec2_monitoring/target/ec2-monitoring-dashboard.jar started by ubuntu in /home/ubuntu/Java_Monitoring_Application/03_Java_ec2_monitoring)
+2026-11-16T10:09:19.095Z  INFO 3221 --- [ec2-monitoring-dashboard] [           main] c.d.monitoring.MonitoringApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-11-16T10:09:19.095Z  INFO 3221 --- [ec2-monitoring-dashboard] [main] c.d.monitoring.MonitoringApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-11-16T10:09:20.921Z  INFO 3221 --- [ec2-monitoring-dashboard] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-11-16T10:09:20.921Z  INFO 3221 --- [ec2-monitoring-dashboard] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-11-16T10:09:20.948Z  INFO 3221 --- [ec2-monitoring-dashboard] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-16T10:09:20.948Z  INFO 3221 --- [ec2-monitoring-dashboard] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-16T10:09:20.949Z  INFO 3221 --- [ec2-monitoring-dashboard] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2026-11-16T10:09:20.949Z  INFO 3221 --- [ec2-monitoring-dashboard] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2026-11-16T10:09:20.991Z  INFO 3221 --- [ec2-monitoring-dashboard] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-11-16T10:09:20.991Z  INFO 3221 --- [ec2-monitoring-dashboard] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-11-16T10:09:20.992Z  INFO 3221 --- [ec2-monitoring-dashboard] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1739 ms
+2026-11-16T10:09:20.992Z  INFO 3221 --- [ec2-monitoring-dashboard] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1739 ms
+2026-11-16T10:09:21.709Z  INFO 3221 --- [ec2-monitoring-dashboard] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-11-16T10:09:21.709Z  INFO 3221 --- [ec2-monitoring-dashboard] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-11-16T10:09:21.729Z  INFO 3221 --- [ec2-monitoring-dashboard] [           main] c.d.monitoring.MonitoringApplication     : Started MonitoringApplication in 3.627 seconds (process running for 4.451)
+2026-11-16T10:09:21.729Z  INFO 3221 --- [ec2-monitoring-dashboard] [main] c.d.monitoring.MonitoringApplication     : Started MonitoringApplication in 3.627 seconds (process running for 4.451)
+2026-11-16T10:09:38.936Z  INFO 3221 --- [ec2-monitoring-dashboard] [nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-16T10:09:38.936Z  INFO 3221 --- [ec2-monitoring-dashboard] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-11-16T10:09:38.937Z  INFO 3221 --- [ec2-monitoring-dashboard] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-16T10:09:38.937Z  INFO 3221 --- [ec2-monitoring-dashboard] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-11-16T10:09:38.940Z  INFO 3221 --- [ec2-monitoring-dashboard] [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-11-16T10:09:38.940Z  INFO 3221 --- [ec2-monitoring-dashboard] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-11-16T10:17:05.550Z  INFO 3221 --- [ec2-monitoring-dashboard] [nio-8080-exec-8] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [80;sh+/tmp/gpon8080&ipv=0...]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:403) ~[tomcat-embed-core-10.1.46.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271) ~[tomcat-embed-core-10.1.46.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.46.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.46.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776) ~[tomcat-embed-core-10.1.46.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.46.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975) ~[tomcat-embed-core-10.1.46.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493) ~[tomcat-embed-core-10.1.46.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.46.jar!/:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-11-16T10:17:05.550Z  INFO 3221 --- [ec2-monitoring-dashboard] [http-nio-8080-exec-8] o.apache.coyote.http11.Http11Processor   : Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+
+java.lang.IllegalArgumentException: Invalid character found in method name [80;sh+/tmp/gpon8080&ipv=0...]. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:403) ~[tomcat-embed-core-10.1.46.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:271) ~[tomcat-embed-core-10.1.46.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.46.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.46.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1776) ~[tomcat-embed-core-10.1.46.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.46.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:975) ~[tomcat-embed-core-10.1.46.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:493) ~[tomcat-embed-core-10.1.46.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.46.jar!/:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+

@@ -1,0 +1,25 @@
+2026-11-16T10:18:00.458Z  INFO 3479 --- [ec2-monitoring-dashboard] [main] c.d.monitoring.MonitoringApplication     : Starting MonitoringApplication v1.0.0 using Java 21.0.13.0.3 with PID 3479 (/home/ubuntu/Java_Monitoring_Application/03_Java_ec2_monitoring/target/ec2-monitoring-dashboard.jar started by ubuntu in /home/ubuntu/Java_Monitoring_Application/03_Java_ec2_monitoring/target)
+2026-11-16T10:18:00.466Z  INFO 3479 --- [ec2-monitoring-dashboard] [main] c.d.monitoring.MonitoringApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-11-16T10:18:03.228Z  INFO 3479 --- [ec2-monitoring-dashboard] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-11-16T10:18:03.253Z  INFO 3479 --- [ec2-monitoring-dashboard] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-16T10:18:03.253Z  INFO 3479 --- [ec2-monitoring-dashboard] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2026-11-16T10:18:03.309Z  INFO 3479 --- [ec2-monitoring-dashboard] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-11-16T10:18:03.310Z  INFO 3479 --- [ec2-monitoring-dashboard] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2712 ms
+2026-11-16T10:18:04.044Z  WARN 3479 --- [ec2-monitoring-dashboard] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-11-16T10:18:04.076Z  INFO 3479 --- [ec2-monitoring-dashboard] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-11-16T10:18:04.107Z ERROR 3479 --- [ec2-monitoring-dashboard] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+

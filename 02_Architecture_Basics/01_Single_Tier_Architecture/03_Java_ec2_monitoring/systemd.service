@@ -1,0 +1,19 @@
+
+[Unit]
+Description=Java EC2 Monitoring Dashboard
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/Java_Monitoring_Application/03_Java_ec2_monitoring
+ExecStart=/usr/bin/java -jar /home/ubuntu/Java_Monitoring_Application/03_Java_ec2_monitoring/target/ec2-monitoring-dashboard.jar
+
+Restart=always
+RestartSec=10
+
+StandardOutput=append:/home/ubuntu/Java_Monitoring_Application/03_Java_ec2_monitoring/logs/application.log
+StandardError=append:/home/ubuntu/Java_Monitoring_Application/03_Java_ec2_monitoring/logs/application.log
+
+[Install]
+WantedBy=multi-user.target
