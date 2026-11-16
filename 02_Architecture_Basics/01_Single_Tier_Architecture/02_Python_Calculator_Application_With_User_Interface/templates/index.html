@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Modern Python Calculator</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<main class="calculator">
+
+    <header class="header">
+        <div>
+            <h1>Calculator</h1>
+            <p>Simple. Smart. Powerful.</p>
+        </div>
+        <div class="logo">✦</div>
+    </header>
+
+    <section class="display">
+        <div class="display-label">YOUR CALCULATION</div>
+
+        <input
+            type="text"
+            id="display"
+            value=""
+            placeholder="0"
+            readonly
+            aria-label="Calculator display"
+        >
+
+        <div id="message" role="status"></div>
+    </section>
+
+    <section class="buttons">
+
+        <button class="special" onclick="clearDisplay()">AC</button>
+        <button class="special" onclick="deleteLast()">DEL</button>
+        <button class="operator" onclick="appendValue('%')">MOD</button>
+        <button class="operator" onclick="appendValue('/')">÷</button>
+
+        <button onclick="appendValue('7')">7</button>
+        <button onclick="appendValue('8')">8</button>
+        <button onclick="appendValue('9')">9</button>
+        <button class="operator" onclick="appendValue('*')">×</button>
+
+        <button onclick="appendValue('4')">4</button>
+        <button onclick="appendValue('5')">5</button>
+        <button onclick="appendValue('6')">6</button>
+        <button class="operator" onclick="appendValue('-')">−</button>
+
+        <button onclick="appendValue('1')">1</button>
+        <button onclick="appendValue('2')">2</button>
+        <button onclick="appendValue('3')">3</button>
+        <button class="operator" onclick="appendValue('+')">+</button>
+
+        <button onclick="appendValue('00')">00</button>
+        <button onclick="appendValue('0')">0</button>
+        <button onclick="appendValue('.')">.</button>
+        <button class="equals" onclick="calculateResult()">=</button>
+
+    </section>
+
+    <section class="history-section">
+        <div class="history-header">
+            <h2>Recent calculations</h2>
+            <button class="clear-history" onclick="clearHistory()">Clear</button>
+        </div>
+        <ul id="history"></ul>
+    </section>
+
+    <footer>
+        <span>POWERED BY PYTHON & FLASK</span>
+        <span class="online">● ONLINE</span>
+    </footer>
+
+</main>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
