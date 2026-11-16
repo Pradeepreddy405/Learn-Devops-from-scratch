@@ -9,7 +9,7 @@
 		
 		It is commonly used for simple standalone applications.
 		
-	## 🏗️ Architecture Diagram
+## 🏗️ Architecture Diagram
 		
 		In Single-Tier Architecture, all application components exist within a single tier.
 		
@@ -32,7 +32,7 @@
 		+--------------------------------------+
 		```
 		
-	## ⚙️ How Single-Tier Architecture Works
+## ⚙️ How Single-Tier Architecture Works
 		
 		1. The user interacts with the application through the UI.
 		2. The application receives the user's request.
@@ -42,7 +42,7 @@
 		
 		All these operations happen within the same system.
 		
-	## 💡 Real-World Examples
+## 💡 Real-World Examples
 		
 		- Calculator applications.
 		- Simple desktop applications.
@@ -50,7 +50,7 @@
 		- Basic inventory applications.
 		- Standalone applications.
 		
-	## ✅ Advantages
+## ✅ Advantages
 		
 		- Simple architecture.
 		- Easy to develop for small applications.
@@ -59,7 +59,7 @@
 		- Lower infrastructure complexity.
 		- Suitable for standalone applications.
 		
-	## ❌ Disadvantages
+## ❌ Disadvantages
 		
 		- Difficult to scale individual components.
 		- Limited flexibility.
@@ -68,7 +68,7 @@
 		- Limited support for multiple users accessing shared data.
 		- Changes to one component can affect the entire application.
 		
-	## 📊 Characteristics
+## 📊 Characteristics
 		
 		| Feature | Description |
 		|---|---|
@@ -81,7 +81,7 @@
 		| Scalability | Limited |
 		| Complexity | Low |
 		
-	## 🔍 Single-Tier vs Multi-Tier Architecture
+## 🔍 Single-Tier vs Multi-Tier Architecture
 		
 		| Feature | Single-Tier | Multi-Tier |
 		|---|---|---|
@@ -92,7 +92,7 @@
 		| Maintenance | Difficult for large apps | Easier with proper separation |
 		| Complexity | Low | Higher |
 		
-	## 🎯 When to Use Single-Tier Architecture?
+## 🎯 When to Use Single-Tier Architecture?
 		
 		Use Single-Tier Architecture when:
 		
@@ -101,7 +101,7 @@
 		- Creating simple tools with limited functionality.
 		- Developing applications that do not require distributed access.
 			
-	## 📝 Conclusion
+## 📝 Conclusion
 		
 		Single-Tier Architecture is one of the simplest software architecture approaches. It combines the User Interface, Business Logic, and Database into a single system.
 		
