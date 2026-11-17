@@ -14,11 +14,12 @@
 
 	And three basic permissions:
 	```
- Permission       File                         Directory
-==========       ====                         =========
-r                Read file contents            List directory contents
-w                Modify file contents          Create/delete/rename files
-x                Execute file                  Enter/traverse directory
+ 	Permission       File                         Directory
+	==========       ====                         =========
+	r                Read file contents            List directory contents
+	w                Modify file contents          Create/delete/rename files
+	x                Execute file                  Enter/traverse directory
+ 
 	```
 
 	### 1.2 Basic example
