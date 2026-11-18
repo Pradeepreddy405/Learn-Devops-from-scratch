@@ -1,0 +1,59 @@
+Python standard directory 
+
+python-app/
+├── app.py
+├── requirements.txt
+├── setup.py              (optional)
+├── pyproject.toml        (modern projects)
+├── tests/
+│   └── test_app.py
+├── venv/                 (local only, never commit)
+
+
+
+
+Key Files		 	(DevOps Focus)
+=========			=============================
+File				Purpose
+app.py				Application entry
+requirements.txt	Dependencies (like pom.xml)
+pyproject.toml		Modern build config
+setup.py			Legacy packaging
+venv/				Isolated environment
+
+
+
+
+
+
+Memorize :
+
+Python Build =
+	1)Create isolated environment
+	2)Install dependencies
+	3)Validate (optional tests)
+	4)Produce runnable artifact
+	
+Artifact can be:
+
+	1)Virtual environment
+	2)Wheel (.whl)
+	3)Zip file
+	4)Docker image
+	
+	
+
+Manual build process : 
+		Install Python
+			↓
+		Create project
+			↓
+		Create venv
+			↓
+		Install dependencies
+			↓
+		Validate app
+			↓
+		Run app
+			↓
+		Package artifact
