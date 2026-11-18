@@ -1,0 +1,16 @@
+𝗠𝗼𝗱𝘂𝗹𝗲 𝟲: .𝗡𝗘𝗧 𝗕𝘂𝗶𝗹𝗱 𝗔𝘂𝘁𝗼𝗺𝗮𝘁𝗶𝗼𝗻: 𝗙𝗿𝗼𝗺 𝗦𝗼𝘂𝗿𝗰𝗲 𝘁𝗼 𝗔𝗿𝘁𝗶𝗳𝗮𝗰𝘁
+
+𝟭  𝗦𝗼𝘂𝗿𝗰𝗲 𝗖𝗼𝗱𝗲
+                           Developers write the application using C# and define the project configuration and dependencies in the " .̲𝚌̲𝚜̲𝚙̲𝚛̲𝚘̲𝚓̲ ̲" file. The complete source code is stored and version-controlled in a Git repository such as GitHub, GitLab, or Azure Repos.
+
+𝟮 𝗥𝗲𝘀𝘁𝗼𝗿𝗲 𝗗𝗲𝗽𝗲𝗻𝗱𝗲𝗻𝗰𝗶𝗲𝘀 – "𝗱𝗼𝘁𝗻𝗲𝘁 𝗿𝗲𝘀𝘁𝗼𝗿𝗲 "
+                           The first step in the build pipeline is restoring dependencies. The command dotnet restore downloads all required 𝙉𝙪𝙂𝙚𝙩 𝙥𝙖𝙘𝙠𝙖𝙜𝙚𝙨 listed in the .csproj file from package repositories and prepares the project for compilation.
+
+𝟯 𝗕𝘂𝗶𝗹𝗱 / 𝗖𝗼𝗺𝗽𝗶𝗹𝗲 – " 𝗱𝗼𝘁𝗻𝗲𝘁 𝗯𝘂𝗶𝗹𝗱 -𝗰 𝗥𝗲𝗹𝗲𝗮𝘀𝗲 "
+                           Next, the application is compiled using dotnet build -c Release. This command compiles the C# source code into 𝗜𝗻𝘁𝗲𝗿𝗺𝗲𝗱𝗶𝗮𝘁𝗲 𝗟𝗮𝗻𝗴𝘂𝗮𝗴𝗲 (𝗜𝗟) 𝗮𝗻𝗱 𝗴𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝘀 𝗗𝗟𝗟 𝗮𝘀𝘀𝗲𝗺𝗯𝗹𝗶𝗲𝘀. The compiled output is usually placed inside the 𝗯𝗶𝗻/𝗥𝗲𝗹𝗲𝗮𝘀𝗲/ directory.
+
+𝟰 𝗧𝗲𝘀𝘁 𝗦𝘁𝗮𝗴𝗲 – 𝗱𝗼𝘁𝗻𝗲𝘁 𝘁𝗲𝘀𝘁
+                           After building the application, automated tests are executed using dotnet test. This step runs unit tests to validate that the application logic works correctly before moving further in the pipeline.
+
+𝟱 𝗣𝘂𝗯𝗹𝗶𝘀𝗵 𝗔𝗿𝘁𝗶𝗳𝗮𝗰𝘁 – 𝗱𝗼𝘁𝗻𝗲𝘁 𝗽𝘂𝗯𝗹𝗶𝘀𝗵
+                           The deployment-ready package is created using dotnet publish -c Release -o out. This command produces the final deployable artifacts including 𝗮𝗽𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻 𝗗𝗟𝗟𝘀, 𝗰𝗼𝗻𝗳𝗶𝗴𝘂𝗿𝗮𝘁𝗶𝗼𝗻 𝗳𝗶𝗹𝗲𝘀, 𝗮𝗻𝗱 𝗿𝘂𝗻𝘁𝗶𝗺𝗲 𝗱𝗲𝗽𝗲𝗻𝗱𝗲𝗻𝗰𝗶𝗲𝘀. These artifacts are often stored in repositories like 𝘚𝘰𝘯𝘢𝘵𝘺𝘱𝘦 𝘕𝘦𝘹𝘶𝘴 𝘙𝘦𝘱𝘰𝘴𝘪𝘵𝘰𝘳𝘺, 𝘑𝘍𝘳𝘰𝘨 𝘈𝘳𝘵𝘪𝘧𝘢𝘤𝘵𝘰𝘳𝘺, 𝘰𝘳 𝘤𝘭𝘰𝘶𝘥 𝘴𝘵𝘰𝘳𝘢𝘨𝘦 𝘴𝘶𝘤𝘩 𝘢𝘴 𝘈𝘮𝘢𝘻𝘰𝘯 𝘚3.

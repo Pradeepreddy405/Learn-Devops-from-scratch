@@ -1,0 +1,52 @@
+As a DevOps engineer, you don’t need to know every C# detail, but you must know the build commands, artifact formats (.dll/.exe), and publish structure to automate deployment reliably
+
+
+
+Build = Convert source code into deployable artifacts
+
+		For .NET :
+				Source 			→ .cs, .csproj
+				Build output 	→ .dll, .exe
+				Deployable		→ published folder / Docker image
+		
+		Core concepts - Fundamental components before going to build dotnet applications
+				.NET SDK		Provides compiler, runtime, and build tools.
+				.csproj file	Project file containing dependencies, build rules, and target framework.
+				dotnet CLI		Command-line interface used in automation/pipelines.
+				Restore			Downloads all dependencies (NuGet packages).
+				Build			Compiles source code into binaries (.dll/.exe).
+				Publish			Prepares deployable files (for production or container deployment).
+		
+1)	Basic .NET build flow
+	# 1. Restore dependencies
+		 dotnet restore
+									dotnet restore → Ensures all NuGet packages are available.
+				
+
+	# 2. Build the project
+		 dotnet build
+									dotnet build → Compiles .cs files into .dll or .exe in /bin/Debug or /bin/Release.
+
+	# 3. Publish deployable artifacts
+		 dotnet publish -c Release -o ./publish
+						
+									dotnet publish → Prepares files for deployment (/publish folder).
+									
+	
+2)	Build Artifacts Location
+
+	Stage		Output Location					File Type
+	=====  		===============					============
+	Build		/bin/Debug/net7.0/				.dll / .exe
+	Publish		/bin/Release/net7.0/publish/	Deployable folder (ready for servers or Docker)
+	
+	
+	
+	
+3)In CI/CD pipelines, these steps translate to:
+
+	Restore dependencies 	→ dotnet restore
+	Build application 		→ dotnet build
+	Run tests 				→ dotnet test
+	Publish artifacts 		→ dotnet publish
+	Package & deploy 		→ Copy publish folder to server, or build a Docker image.
