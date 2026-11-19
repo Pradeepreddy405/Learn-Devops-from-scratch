@@ -1,11 +1,11 @@
-Step 1:️Install Python
+## Step 1:️Install Python
 
 	Make sure Python is installed on your system (Amazon Linux, Ubuntu, etc.).
 	Command :
 		sudo yum install python3 python3-pip -y   # Amazon Linux
 		sudo apt install python3 python3-pip -y   # Ubuntu
 
-Step 2:Create Project Structure
+## Step 2:Create Project Structure
 		Set up a standard Python project directory:
 		
 		python-app/
@@ -16,30 +16,30 @@ Step 2:Create Project Structure
 		├── tests/
 		└── venv/           # local only
 
-Step️ 3:	Create Isolated Environment (venv)
+## Step️ 3:	Create Isolated Environment (venv)
 		Keeps dependencies separate from system Python.
 		python3 -m venv venv
 		source venv/bin/activate  # activate venv
 
-Step 4:	Install Dependencies
+## Step 4:	Install Dependencies
 
 		Use requirements.txt or pyproject.toml:
 		pip install -r requirements.txt
 		For modern projects using Poetry or PDM:
 		poetry install
 
-Step 5:️	Validate (Optional Tests)
+## Step 5:️	Validate (Optional Tests)
 
 		Run unit tests to ensure code works before packaging:
 		pytest tests/
 		This step is optional but highly recommended for CI/CD.
 
-Step 6:	Run Application
+## Step 6:	Run Application
 
 		Make sure your app runs correctly:
 		python app.py
 
-Step 7:Package Artifact
+## Step 7:Package Artifact
 
 		The final artifact can be one of:
 		Virtual environment (just zip your venv/ with your code)
@@ -48,5 +48,5 @@ Step 7:Package Artifact
 		Zip file (for serverless deployments)
 		Docker image (most common in DevOps pipelines)
 
-Conclusion:
+## Conclusion:
 Your “Manual build process” diagram is correct. For Python, the artifact is usually the code + dependencies, packaged either as a wheel, zip, or Docker image for deployment.
