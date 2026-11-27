@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+<rect width="100%" height="100%" fill="#f8fafc"/>
+<text x="600" y="75" text-anchor="middle" font-family="Arial" font-size="34" font-weight="bold" fill="#0f172a">Scalable architecture</text>
+<text x="600" y="115" text-anchor="middle" font-family="Arial" font-size="17" fill="#475569">Conceptual architecture — adapt addresses, ports and services to your environment</text>
+<rect x="97" y="235" width="210" height="92" rx="16" fill="#dbeafe" stroke="#334155" stroke-width="2"/>
+<text x="202.0" y="273" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold" fill="#0f172a">Users</text>
+<text x="202.0" y="301" text-anchor="middle" font-family="Arial" font-size="15" fill="#334155">Traffic</text>
+<line x1="307" y1="281.0" x2="352" y2="281.0" stroke="#475569" stroke-width="4"/>
+<polygon points="352,281.0 337,272.0 337,290.0" fill="#475569"/>
+<rect x="362" y="235" width="210" height="92" rx="16" fill="#dcfce7" stroke="#334155" stroke-width="2"/>
+<text x="467.0" y="273" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold" fill="#0f172a">CDN / LB</text>
+<text x="467.0" y="301" text-anchor="middle" font-family="Arial" font-size="15" fill="#334155">Edge + distribution</text>
+<line x1="572" y1="281.0" x2="617" y2="281.0" stroke="#475569" stroke-width="4"/>
+<polygon points="617,281.0 602,272.0 602,290.0" fill="#475569"/>
+<rect x="627" y="235" width="210" height="92" rx="16" fill="#fef3c7" stroke="#334155" stroke-width="2"/>
+<text x="732.0" y="273" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold" fill="#0f172a">App fleet</text>
+<text x="732.0" y="301" text-anchor="middle" font-family="Arial" font-size="15" fill="#334155">Horizontal scale</text>
+<line x1="837" y1="281.0" x2="882" y2="281.0" stroke="#475569" stroke-width="4"/>
+<polygon points="882,281.0 867,272.0 867,290.0" fill="#475569"/>
+<rect x="892" y="235" width="210" height="92" rx="16" fill="#e0e7ff" stroke="#334155" stroke-width="2"/>
+<text x="997.0" y="273" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold" fill="#0f172a">Shared data</text>
+<text x="997.0" y="301" text-anchor="middle" font-family="Arial" font-size="15" fill="#334155">Cache + database</text>
+<text x="600" y="455" text-anchor="middle" font-family="Arial" font-size="17" fill="#475569">Requests move left to right; responses generally return along the reverse path.</text>
+</svg>
